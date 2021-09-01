@@ -9,7 +9,7 @@ Liqz Lending Protocol for Solana.
 * [Rust](https://rustup.rs/)
 * [Just](https://github.com/casey/just)
 
-[Liqz](../assets/Liqz.pdf) for more info
+[Liqz](../main/assets/Liqz.pdf) for more info
 
 # How to use
 
