@@ -1,0 +1,33 @@
+[package]
+authors = ["Weiyuan Wu <youngw@sfu.ca>"]
+description = "liqz Protocol"
+edition = "2018"
+name = "liqz"
+version = "0.1.0"
+
+[features]
+cpi = ["no-entrypoint"]
+default = []
+no-entrypoint = []
+no-idl = []
+
+[dependencies]
+anchor-lang = {version = "0.11"}
+anchor-spl = {version = "0.11"}
+borsh = "0.9"
+fehler = "1"
+num-derive = "0.3"
+solana-program = "1"
+spl-associated-token-account = {version = "1", features = ["no-entrypoint"]}
+spl-token = {version = "3", features = ["no-entrypoint"]}
+thiserror = "1"
+
+[dev-dependencies]
+solana-sdk = "1"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "liqz"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
